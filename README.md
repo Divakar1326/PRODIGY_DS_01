@@ -1,78 +1,323 @@
-Titanic-Data-Visualization
-Overview
-This repository contains a Python program designed to analyze and visualize data from the Titanic dataset. The analysis aims to explore the factors influencing survival rates among passengers, utilizing libraries such as Pandas, Seaborn, and Matplotlib for data manipulation and visualization.
+# 📊 Data Visualization & Titanic Analysis
 
-Features
-Data Cleaning:
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/Seaborn-Statistical%20Plots-4C72B0?style=for-the-badge" alt="Seaborn">
+  <img src="https://img.shields.io/badge/EDA-Exploratory%20Analysis-2EA44F?style=for-the-badge" alt="EDA">
+  <img src="https://img.shields.io/badge/Status-Completed-2EA44F?style=for-the-badge" alt="Status">
+</p>
 
-Handling missing values for Age, Embarked, and Fare.
-Dropping the Cabin column due to excessive missing values.
-Exploratory Data Analysis (EDA):
+<p align="center">
+  <b>A Python data-analysis project exploring demographic patterns and Titanic survival outcomes through data cleaning, EDA, statistical analysis, and visualization.</b>
+</p>
 
-Summary statistics of numerical variables.
-Cross-tabulations for various attributes.
-Correlation analysis.
-Visualizations:
+<p align="center">
+  <a href="#-overview">Overview</a> •
+  <a href="#-projects">Projects</a> •
+  <a href="#-visualizations">Visualizations</a> •
+  <a href="#-getting-started">Getting Started</a> •
+  <a href="#-insights">Insights</a>
+</p>
 
-Count plots for survival based on Age, Gender, Passenger Class, and Embarked Port.
-Box plots and violin plots to analyze age distribution concerning survival.
-Histograms and swarm plots for Fare distribution by survival status.
-Pie charts for survival rates segmented by gender and passenger class.
-Heatmaps for visualizing correlations among numerical variables.
-Installation
-Clone the repository:
+---
 
-bash
-Copy code
-git clone https://github.com/yourusername/Titanic-Data-Visualization.git
-Navigate to the project directory:
+## ✨ Overview
 
-bash
-Copy code
-cd Titanic-Data-Visualization
-Install the required packages:
+This repository contains two related Python data-analysis workflows:
 
-bash
-Copy code
-pip install pandas seaborn matplotlib
-Ensure you have the Titanic dataset (Titanic.csv) placed in the project directory.
+### 🚢 Titanic Survival Analysis
+Explores passenger information from the **Titanic dataset** to investigate patterns associated with survival using data cleaning, exploratory analysis, correlation analysis, and a range of statistical visualizations.
 
-Usage
-Run the program:
+### 👥 Demographic Data Visualization
+Explores demographic information through visualizations of **gender, age groups, and occupation**, using bar charts and histograms to identify distribution patterns.
 
-bash
-Copy code
-python your_program_file.py
-The program will load the Titanic dataset and perform data cleaning, followed by various analyses and visualizations that will be displayed.
+The project focuses on turning raw tabular data into clear visual insights using a practical Python data-analysis workflow.
 
-Data Format
-Ensure that the Titanic.csv file has the following structure:
+---
 
-PassengerId	Survived	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Cabin	Embarked
-1	0	3	...	male	22	1	0	...	7.25	...	S
-2	1	1	...	female	38	1	0	...	71.2833	...	C
-...	...	...	...	...	...	...	...	...	...	...	...
-Key Insights
-Females had significantly higher survival rates compared to males.
-First-class passengers had better survival chances than those in lower classes.
-Children and younger passengers were more likely to survive.
-Passengers who paid higher fares had higher survival chances.
-Passengers who embarked at Cherbourg had better odds of survival than those from Southampton.
-Contributing
-Contributions are welcome! If you have suggestions for improvements or features, feel free to create a pull request or open an issue.
+# 🚀 Projects
 
-This repository contains a Python program designed to visualize demographic data using bar graphs and histograms. The visualizations are created using the popular libraries Pandas, Matplotlib, and Seaborn. The primary goal is to provide insights into the gender and age distribution of individuals, as well as their occupations, through various graphical representations.
+## 🚢 1. Titanic Survival Analysis
 
-Features
-Bar Graphs:
+The Titanic analysis investigates factors associated with passenger survival using the Titanic dataset.
 
-Gender Distribution
-Occupation Distribution
-Average Age by Occupation
-Gender Distribution by Age Group
-Histograms:
+### 🧹 Data Cleaning
 
-Age Distribution
-Age Distribution by Gender (Overlaid)
-Age Distribution with Density Plot (KDE)
-Age Group Distribution
+The analysis includes:
+
+- Handling missing values in `Age`
+- Handling missing values in `Embarked`
+- Handling missing values in `Fare`
+- Dropping the `Cabin` column because of extensive missing data
+
+### 🔎 Exploratory Data Analysis
+
+The project explores:
+
+- Summary statistics of numerical variables
+- Cross-tabulations
+- Correlation analysis
+- Relationships between passenger characteristics and survival
+
+### 📊 Visual Analysis
+
+The workflow includes:
+
+- Count plots for survival by age, gender, passenger class, and embarkation port
+- Box plots
+- Violin plots
+- Histograms
+- Swarm plots
+- Pie charts
+- Correlation heatmaps
+
+---
+
+## 👥 2. Demographic Data Visualization
+
+A Python visualization workflow focused on understanding demographic distributions.
+
+### 📊 Bar Graphs
+
+The analysis includes visualizations for:
+
+- Gender distribution
+- Occupation distribution
+- Average age by occupation
+- Gender distribution across age groups
+
+### 📈 Histograms
+
+The project also explores:
+
+- Age distribution
+- Age distribution by gender
+- Age distribution with density estimation (KDE)
+- Age-group distribution
+
+---
+
+# 🔄 Analysis Workflow
+
+```text
+              ┌─────────────────────┐
+              │      Raw Data       │
+              └──────────┬──────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │   Data Cleaning     │
+              │ Missing Values      │
+              │ Data Preparation    │
+              └──────────┬──────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Exploratory Data    │
+              │      Analysis       │
+              └──────────┬──────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Statistical &       │
+              │ Correlation Analysis│
+              └──────────┬──────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Data Visualization  │
+              │ Charts & Plots      │
+              └──────────┬──────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Visual Insights     │
+              └─────────────────────┘
+```
+
+---
+
+# 📈 Visualizations
+
+## 🚢 Titanic Analysis
+
+| Visualization | Purpose |
+|---|---|
+| 📊 Count Plots | Compare survival across categorical variables |
+| 📦 Box Plots | Examine distribution and spread |
+| 🎻 Violin Plots | Compare distributions across survival groups |
+| 📈 Histograms | Explore numerical distributions |
+| 🐝 Swarm Plots | Inspect individual observations |
+| 🥧 Pie Charts | View survival proportions |
+| 🔥 Heatmaps | Explore numerical correlations |
+
+## 👥 Demographic Analysis
+
+| Visualization | Purpose |
+|---|---|
+| 📊 Bar Charts | Compare demographic categories |
+| 📈 Histograms | Explore age distributions |
+| 📉 KDE Plots | Visualize estimated distribution density |
+| 👥 Grouped Comparisons | Examine gender and age-group relationships |
+
+---
+
+# 💡 Insights Explored
+
+The Titanic analysis investigates patterns such as:
+
+- 👩 Differences in survival between female and male passengers
+- 🎫 Differences in survival across passenger classes
+- 🧒 Relationships between age and survival
+- 💰 Relationships between fare levels and survival
+- ⚓ Differences associated with embarkation ports
+
+The demographic workflow investigates:
+
+- 👥 Gender composition
+- 🎂 Age distribution
+- 💼 Occupation distribution
+- 📊 Average age across occupations
+- 👤 Gender distribution across age groups
+
+> These are exploratory observations from the datasets and visual analysis, not causal conclusions.
+
+---
+
+# 🛠️ Tech Stack
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square" alt="Matplotlib">
+<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=flat-square" alt="Seaborn">
+
+</p>
+
+---
+
+# 📁 Repository Structure
+
+```text
+Data-Visualization-Project/
+│
+├── 📄 Demographic Data Visualization
+├── 📄 Titanic Survival Analysis
+├── 📊 Titanic.csv
+├── 📊 sample.csv
+└── 📄 README.md
+```
+
+> The repository currently contains the Titanic dataset and sample data alongside the analysis scripts shown in the project listing.
+
+---
+
+# ⚙️ Getting Started
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Divakar1326/Data-Visualization-Project.git
+cd Data-Visualization-Project
+```
+
+## 2️⃣ Install Dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+
+## 3️⃣ Run a Project
+
+Run the relevant Python file from the repository:
+
+```bash
+python "<script-name>.py"
+```
+
+> Replace `<script-name>.py` with the actual Python filename in the repository.
+
+---
+
+# 📋 Expected Titanic Dataset Fields
+
+The Titanic workflow expects fields such as:
+
+```text
+PassengerId
+Survived
+Pclass
+Name
+Sex
+Age
+SibSp
+Parch
+Ticket
+Fare
+Cabin
+Embarked
+```
+
+---
+
+# 🧠 What This Project Demonstrates
+
+- 🧹 Data cleaning and missing-value handling
+- 📊 Exploratory Data Analysis
+- 📐 Basic statistical analysis
+- 🔗 Correlation analysis
+- 📈 Data visualization
+- 🐼 Pandas-based data manipulation
+- 🎨 Matplotlib and Seaborn visualization
+- 🔍 Pattern discovery from real-world-style datasets
+
+---
+
+# 🌱 Learning Focus
+
+This project was built to practice the complete path from **raw tabular data to interpretable visual insights**.
+
+The emphasis is on understanding datasets, preparing them for analysis, selecting appropriate visualizations, and communicating patterns clearly.
+
+---
+
+# 🔮 Future Improvements
+
+Potential extensions include:
+
+- 📊 Add an interactive Streamlit dashboard
+- 🔎 Add deeper statistical testing
+- 🤖 Add a survival-prediction machine learning model
+- 📈 Add interactive Plotly visualizations
+- 🧪 Add reusable analysis functions
+- 📦 Add a reproducible `requirements.txt`
+
+---
+
+# 👨‍💻 Author
+
+## Divakar M
+
+**B.Tech CSE — Artificial Intelligence & Data Science**
+
+AI/ML • Generative AI • Python • Data Science
+
+<p align="center">
+  <a href="https://github.com/Divakar1326">
+    <img src="https://img.shields.io/badge/GitHub-Divakar1326-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  ⭐ If you find this project useful, consider starring the repository.
+</p>
+
+<p align="center">
+  <b>Turning Data into Visual Insights 📊</b>
+</p>
